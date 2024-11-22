@@ -10,5 +10,12 @@ pipeline {
                 
             }
         }
+
+        stage ('Set Up Environment') {
+            steps { 
+                sh 'pip install -r jenkins-project/requirements.txt'
+                
+            }
+        }
     }
 }
