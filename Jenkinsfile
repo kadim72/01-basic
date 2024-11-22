@@ -5,7 +5,7 @@ pipeline {
         stage ('Checkout Code') {
             steps {
                 echo "hello"
-                checkout scm
+                sh 'git clone https://github.com/kodekloudhub/jenkins-project.git'
                 
             }
         }
