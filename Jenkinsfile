@@ -6,6 +6,13 @@ pipeline {
             steps {
                 echo "hello"
                 checkout scm
+                
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Jenkinsfile is working"
             }
         }
     }
