@@ -17,5 +17,12 @@ pipeline {
                 
             }
         }
+
+        stage ('Unit Testing') {
+            steps { 
+                sh 'pytest'
+                
+            }
+        }
     }
 }
