@@ -20,7 +20,7 @@ pipeline {
 
         stage ('Unit Testing') {
             steps { 
-                sh 'pytest'
+                sh 'pytest  jenkins-project/test_app.py'
                 
             }
         }
